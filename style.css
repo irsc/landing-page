@@ -1,0 +1,93 @@
+
+body{
+   
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+ul {
+    list-style-type: none;
+  
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 16px;
+  
+  }
+
+.centered{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.p50-tb{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.logo{
+    flex: 1;
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.hero{
+    display: flex;
+}
+
+.hero h1{
+    font-size: 48px;
+    font-weight: bold;
+    color:#F9FAF8
+}
+
+.secondary-text{
+    font-size: 18px;
+    color: #E5E7EB;;
+}
+.dark-background{
+    background-color: #1F2937;
+}
+
+.light-background{
+    background-color: #E5E7EB;
+}
+
+.image{
+    width: 100%;
+    background-color: darkcyan;
+}
+
+.quote{
+    display: flex;
+    flex-direction: column;
+}
+.quote-text{
+    font-style: italic;
+    font-size: 36px;
+    font-weight: lighter;
+    color: #1F2937;
+    margin-bottom: 0;
+}
+.quote-author{
+    font-weight: bold;
+    padding-right: 1em;
+    align-self: flex-end;
+}
