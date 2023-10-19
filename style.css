@@ -1,8 +1,6 @@
 
 body{
-   
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -13,6 +11,15 @@ header{
     display: flex;
     padding-top: 1em;
     padding-bottom: 1em;
+}
+
+button{
+    background-color: #0275d8;
+    color: white;
+    font-weight: bold;
+    padding: 0.75em 2.5em;
+    border-radius: 0.5em;
+    border: none;
 }
 
 footer{
@@ -33,13 +40,27 @@ ul {
   
   }
 
+a{
+    text-decoration: none;
+}
+
+article h2{
+    text-align: center;
+    margin-bottom: 2em;;
+}
+
 .centered{
     padding-left: 15%;
     padding-right: 15%;
 }
-.p50-tb{
-    padding-top: 50px;
-    padding-bottom: 50px;
+.p75-tb{
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.p25t-75b{
+    padding-top: 25px;
+    padding-bottom: 75px;
 }
 
 .logo{
@@ -50,17 +71,29 @@ ul {
 
 .hero{
     display: flex;
+    gap: 2em;
 }
 
 .hero h1{
     font-size: 48px;
     font-weight: bold;
-    color:#F9FAF8
+    color:#F9FAF8;
+    margin-bottom:0;
+    margin-top: 0;
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 45%;
+
 }
 
 .secondary-text{
     font-size: 18px;
-    color: #E5E7EB;;
+    color: #E5E7EB;
+    margin-top:2px;
 }
 .dark-background{
     background-color: #1F2937;
@@ -71,8 +104,14 @@ ul {
 }
 
 .image{
-    width: 100%;
+    
+    flex-basis: 300px;
     background-color: darkcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-grow:1;
 }
 
 .quote{
@@ -84,10 +123,52 @@ ul {
     font-size: 36px;
     font-weight: lighter;
     color: #1F2937;
-    margin-bottom: 0;
+    margin: 0  2em;
+
 }
 .quote-author{
     font-weight: bold;
-    padding-right: 1em;
     align-self: flex-end;
+    padding-right: 2em;
+    margin-right: 2em;
+}
+
+.call{
+    display: flex;
+    gap: 1.5em;
+    justify-content: space-around;
+    background-color: #0275d8;
+    padding: 3em 5em;
+    border-radius: 0.75em;
+}
+.call-text{
+    color: #F9FAF8;
+}
+.call-text h2{
+    margin-bottom: 5px;
+}
+.call button{
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    margin:0;
+    flex-shrink: 0;
+    align-self: center;
+}
+
+.cards-container{
+    display: flex;
+    gap:2em;
+}
+
+.image-card{
+    border-radius: 1em;
+    border-style: solid;
+    border-color: #0275d8;
+    border-width: 3px;
+    min-height: 150px;
+}
+
+.card p {
+    text-align: center;
 }
